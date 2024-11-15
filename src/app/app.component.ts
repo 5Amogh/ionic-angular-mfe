@@ -14,5 +14,9 @@ export class AppComponent {
   title = 'ionic-angular-mfe';
   constructor(private router: Router){
     (window as any).AngularRouter = router;
+    (window as any).AngularState = {
+      state:'Karnataka',
+      district:'Bengaluru'
+    }
   }
 }

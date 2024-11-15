@@ -16,6 +16,16 @@ export const routes: Routes = [
         } as WebComponentWrapperOptions
       },
       {
+        path: 'child',
+        component: WebComponentWrapper,
+        data: {
+          remoteEntry: 'http://localhost:4201/remoteEntry.js',
+          remoteName: 'react',
+          exposedModule: './react-app',
+          elementName: 'react-root'
+        } as WebComponentWrapperOptions
+      },
+      {
         path: 'hello',
         component: HelloComponent
       }
