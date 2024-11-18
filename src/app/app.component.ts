@@ -18,5 +18,6 @@ export class AppComponent {
       state:'Karnataka',
       district:'Bengaluru'
     }
+    localStorage.setItem('Elevate','project')
   }
 }
